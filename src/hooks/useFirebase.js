@@ -4,7 +4,6 @@ const { useState, useEffect } = require("react")
 
 initializeAuthentication();
 
-
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +28,7 @@ const useFirebase = () => {
             } else {
                 setUser({});
             }
+            setIsLoading(false);
         });
         return () => unsubscribed;
     }, []);

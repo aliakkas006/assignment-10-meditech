@@ -1,7 +1,7 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Service = ({ service }) => {
-    const { name, img, description, price, speciality } = service;
+    const { id, name, img, description, price, speciality } = service;
     return (
         <>
             <div class="items-center text-center h-full hover:bg-gray-50 hover:shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 p-5">
@@ -31,11 +31,14 @@ const Service = ({ service }) => {
                     </span>
                 </div>
 
-                <button class="inline-flex items-center bg-blue-200 border-0 py-1 px-3 focus:outline-none hover:bg-blue-400 rounded text-base my-5 md:mt-0">Details
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </button>
+                {/* Details btn */}
+                <Link to={`/servicing/${id}`}>
+                    <button class="inline-flex items-center bg-blue-200 border-0 py-1 px-3 focus:outline-none hover:bg-blue-400 rounded text-base my-5 md:mt-0">Details here!
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </Link>
                 
             </div>
         </>
@@ -43,3 +46,5 @@ const Service = ({ service }) => {
 };
 
 export default Service;
+
+// <Link to={`/servicing/${id}`}>
