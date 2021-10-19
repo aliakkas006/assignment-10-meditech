@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="bg-black">
             <div className="mx-28 text-center">
-                <div className="grid grid-cols-4 gap-5">
+                <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-5">
 
                     <div className="text-primary my-16">
                         <h4 className="text-secondary text-2xl">Quick Contacts</h4>
