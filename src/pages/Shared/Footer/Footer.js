@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="text-primary my-16">
                         <h4 className="text-secondary text-2xl">Quick Contacts</h4>
                         <p>If you have any questions or need help, feel free to contact with our team.</p>
-                        <h3><i class="fas fa-phone-alt mr-3"></i>01061245741</h3>
+                        <h3><i className="fas fa-phone-alt mr-3"></i>01061245741</h3>
                         <p>2307 Beverley Rd Brooklyn, New York 11226 United States.</p>
                         <p><small>Email: office@meditech.com</small></p>
                     </div>
@@ -34,10 +34,10 @@ const Footer = () => {
                     <div className="my-16">
                         <h4 className="text-secondary">Follow us on</h4>
                         <p className="text-danger text-2xl">
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-twitter mx-5"></i>
-                            <i class="fab fa-instagram mr-5"></i>
-                            <i class="fab fa-youtube"></i>
+                            <i className="fab fa-facebook"></i>
+                            <i className="fab fa-twitter mx-5"></i>
+                            <i className="fab fa-instagram mr-5"></i>
+                            <i className="fab fa-youtube"></i>
                         </p>
                     </div>
                 </div>

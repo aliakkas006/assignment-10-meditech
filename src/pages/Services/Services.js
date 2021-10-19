@@ -9,7 +9,7 @@ const Services = () => {
             .then(res => res.json())
             .then(data => setData(data));
     }, []);
- console.log(data);
+    
     return (
         <div className="my-28 mx-28">
             <h1 className="text-center text-3xl mb-10 text-primary font-medium">Our Dedicated Doctors are</h1>

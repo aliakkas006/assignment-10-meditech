@@ -1,3 +1,11 @@
+# About MediTech website:
+1. This is Health Care Technology related website
+2. In this site i want to try to set good UI/UX design
+3. This is basically React js project
+4. In this project based on react private route and firebase authentication method
+5. Live site link: 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

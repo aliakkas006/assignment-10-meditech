@@ -7,7 +7,7 @@ const Header = () => {
     const { user, logOut } = useAuth();
     return (
         <div>
-            <header className=" bg-indigo-50 px-32 py-5">
+            <header className=" bg-indigo-50 px-28 py-5">
                 <div className="container mx-auto flex flex-wrap flex-col md:flex-row items-center">
 
                     <img  src={logo} alt="" />
@@ -26,18 +26,18 @@ const Header = () => {
                         </NavLink>
 
                         <NavLink
-                            className="mx-5 text-2xl"
-                            to="/services"
+                            className="mx-3 text-2xl"
+                            to="/serviceInfo"
                             activeStyle={{
                                 fontWeight: "bold",
                                 color: "red"
                             }}
                         >
-                            Services
+                            Service Info
                         </NavLink>
 
                         <NavLink
-                            className="mx-5 text-2xl"
+                            className="mr-3 text-2xl"
                             to="/timetable"
                             activeStyle={{
                                 fontWeight: "bold",
@@ -62,23 +62,27 @@ const Header = () => {
 
                     {/* conditional rendering */}
                     {
-                        user.email ? (
+                        user?.email ? (
                             <button onClick={logOut}
                                 className="inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-400 rounded text-base mt-4 md:mt-0">Sign out
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                                 </svg>
                             </button>
                         ) : (
                                 <Link to="/signin">
                                     <button className="inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-400 rounded text-base mt-4 md:mt-0">Sign in
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                                             <path d="M5 12h14M12 5l7 7-7 7"></path>
                                         </svg>
                                     </button>
                                 </Link>
                         )
                     }
+
+                    <p className="ml-5">
+                        Signed in as: <span className="text-primary">{user?.displayName}</span>
+                    </p>
                 </div>
             </header>
         </div>
@@ -89,7 +93,7 @@ export default Header;
 
 /* 
 <button className="inline-flex items-center bg-yellow-200 border-0 py-1 px-3 focus:outline-none hover:bg-yellow-400 rounded text-base mt-4 md:mt-0">Sign out
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                                        <svg fill="none" stroke="currentColor" strokeLinecap=="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                                             <path d="M5 12h14M12 5l7 7-7 7"></path>
                                         </svg>
                                     </button>
