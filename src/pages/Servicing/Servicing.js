@@ -5,7 +5,7 @@ const Servicing = () => {
 
     const { id } = useParams();
     return (
-        <div>
+        <div className="text-center text-2xl text-danger">
             <h2>This is servicing id: {id} </h2>
         </div>
     );
