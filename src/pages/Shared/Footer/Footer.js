@@ -10,7 +10,7 @@ const Footer = () => {
                         <h4 className="text-secondary text-2xl">Quick Contacts</h4>
                         <p>If you have any questions or need help, feel free to contact with our team.</p>
                         <h3><i className="fas fa-phone-alt mr-3"></i>01061245741</h3>
-                        <p>2307 Beverley Rd Brooklyn, New York 11226 United States.</p>
+                        <p>2307 Beverley Rd Brooklyn, New York 11226 United    States.</p>
                         <p><small>Email: office@meditech.com</small></p>
                     </div>
 

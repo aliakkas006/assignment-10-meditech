@@ -15,9 +15,7 @@ const useFirebase = () => {
 
         const provider = new GoogleAuthProvider();
 
-        signInWithPopup(auth, provider)
-            .then(result => setUser(result.user))
-            .finally(() => setIsLoading(false));
+        return signInWithPopup(auth, provider);
     }
 
     // Observe the user auth state changed:
@@ -50,3 +48,8 @@ const useFirebase = () => {
 }
 
 export default useFirebase;
+
+/* 
+.then(result => setUser(result.user))
+            .finally(() => setIsLoading(false));
+*/
